@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-K092TSE7M8"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-K092TSE7M8');
+    </script>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Vojtěch Gistr - Portfolio</title>
+    <meta name="description" content="Full-stack Web & Dekstop, intelligent systems, software design." />
+    <meta name="author" content="Vojtěch Gistr" />
+    <meta name="copyright" content="Copyright &copy; 2024 Vojtěch Gistr. All rights reserved." />
+    <meta name="keywords" content="portfolio, software developer, software engineer, front-end, frontend, back-end, backend, full-stack, fullstack, intelligent systems, software architecture, software design, gistr, Vojtěch Gistr, C#, .NET, javascript, typescript, database, html, scss, css, nodejs, react, postgresql, git, ubuntu" />
+    <meta name="robots" />
+
+    <!-- LIBRARIES -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+
+    <!-- STYLES & FONTS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=JetBrains+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Major+Mono+Display&display=swap">
+    <link rel="stylesheet" href="/assets/css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- FAVICONS -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/assets/img/favicons/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/assets/img/favicons/android-chrome-512x512.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png">
+    <link rel="icon" sizes="48x48" href="/assets/img/favicons/favicon.ico">
+    <link rel="manifest" href="/assets/img/favicons/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#00a0df">
+    <meta name="theme-color" content="#e9f3fb">
+
+    <!-- meta tags for media -->
+    <meta property="og:title" content="Vojtěch Gistr - Portfolio">
+    <meta property="og:description" content="Full-stack Web & Dekstop, intelligent systems, software design.">
+    <meta property="og:image" content="/assets/img/favicons/android-chrome-192x192.png">
+    <meta property="og:url" content="https://gistr.dev/cs/">
+    <meta property="og:site_name" content="gistr.dev">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_US">
+</head>
+
+<body>
+    <nav data-scroll-target="true" id="home">
+        <div class="nav-title">
+            <div class="author">
+                <h3 class="name">Vojtěch Gistr</h3>
+                <p class="title">Software Engineer & University Student</p>
+            </div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#about-me">About me</a></li>
+            <li><a href="#contact-me">Contact</a></li>
+            <li>
+                <a href="/cs/" style="margin-left:1rem;display: flex;align-items:center;justify-content:center;gap:0.5rem;">
+                    <img style="width: 1.6rem;" src="/assets/img/united-states.png" alt="EN">
+                    <i class="fa-solid fa-repeat"></i>
+                </a>
+            </li>
+        </ul>
+        <div class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+    
+    <header>
+        <div class="row">
+
+            <div class="column heading-text">
+                <h4>From inspiration to realization:</h4>
+                <h1>Full-stack Web & Dekstop, intelligent systems, software design.</h1>
+                <p>I'm creative, adapt quickly and value motivated people. I like to solve problems, value feedback and LOVE to learn. I am constantly developing my practical knowledge and actively applying it.</p>
+
+                <div class="button-wrapper">
+                    <button class="btn-primary" onclick="location.href='#contact-me'">Contact me</button>
+                    <button class="btn-secondary" onclick="location.href='#projects'">Projects</button>
+                </div>
+            </div>
+
+            <div class="column heading-logo">
+                <img src="/assets/img/logo.svg" alt="">
+                <div class="overlay"></div>
+            </div>
+        </div>
+    </header>
+    
+    <section id="projects">
+        <div data-scroll-target="true" class="project-base" id="face-recognition" data-color="#f1f1e6">
+            <div class="image">
+                <img src="/assets/img/projects/face-recognition-preview.jpeg" alt="preview" class="shadow">
+            </div>
+            <div class="description">
+                <h5 style="color: var(--accent)">x/x</h5>
+                <h2 style="color: var(--text)">Face Recognition System<span class="latest">LATEST</span></h2>
+                <p style="color: var(--text)"><b>Real-time</b> face identification system with over <b>~99.36%</b> accuracy, including 3D analysis, 
+                    face adaptation and multiple-phase verification. The speed achieves an average of <b>~19.3 ms</b> with 10,000 faces in a <span class="technology-mention">PostgreSQL</span> database. 
+                    An <span class="technology-mention">Intel Realsense D435</span> camera is integrated into the system, which is written in <span class="technology-mention">C# .NET 8</span> and was developed for a parter of SPC Solutions s.r.o.</p>
+                <button style="color: var(--text)" onclick="location.href='http://www.spc.cz';">
+                    Company page
+                </button>
+            </div>
+        </div>
+
+        <div data-scroll-target="true" class="project-base" id="microleaf-lyghts" data-color="#00081a">
+            <div class="image">
+                <video width="320" height="240" controls class="shadow">
+                    <source src="/assets/documents/microleaf-lyghts-preview.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
+            <div class="description">
+                <h5 style="color: #761bdd;">x/x</h5>
+                <h2>Microleaf Lyghts</h2>
+                <p>Nanoleaf® adaptation - Modular LED lights, that can be controlled using a mobile cross-platform app written in <span class="technology-mention">React Native</span>.
+                    In this project I learned how to work with electronics, sychronization and communication between specific devices. The receiver is written in <span class="technology-mention">C++</span>.</p>
+                <button onclick="location.href='/assets/documents/microleaf-lyghts-study.pdf'">
+                    Show Study
+                </button>
+            </div>
+        </div>
+
+        <div data-scroll-target="true" class="project-base" id="battleship-minigame" data-color="#182848">
+
+            <div class="bubble bubble--1"></div>
+            <div class="bubble bubble--2"></div>
+            <div class="bubble bubble--3"></div>
+            <div class="bubble bubble--4"></div>
+            <div class="bubble bubble--5"></div>
+            <div class="bubble bubble--6"></div>
+            <div class="bubble bubble--7"></div>
+            <div class="bubble bubble--8"></div>
+            <div class="bubble bubble--9"></div>
+            <div class="bubble bubble--10"></div>
+            <div class="bubble bubble--11"></div>
+            <div class="bubble bubble--12"></div>
+
+            <div class="image">
+                <img src="/assets/img/projects/battleship-preview.png" alt="preview" class="shadow">
+            </div>
+            <div class="description">
+                <h5 style="color: rgb(0, 163, 163);">x/x</h5>
+                <h2>Battleships Minigame</h2>
+                <p>Battleships is a 2-player strategy game in which you play against the <span class="technology-mention">AI</span>. 
+                Each player has different types of ships placed on their field that the opponent cannot see. The goal is to shoot down all the ships. 
+                Making this game was a good way to learn how to create more complex algorithms and highly interactive AI. 
+                The console application was written in <span class="technology-mention">C++</span>.</p>
+                <div class="button-wrapper">
+                    <button onclick="location.href='/assets/documents/battleships-minigame-study.pdf'">
+                        Show Study
+                    </button>
+
+                    <button onclick="location.href='https://github.com/vojtechgistr/BattleShip-minigame';">
+                        Open GitHub
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div data-scroll-target="true" class="project-base" id="bulgee-discord-bot" data-color="#264a45">
+            <div class="image">
+                <img src="/assets/img/projects/bulgee-preview.png" alt="preview" class="shadow">
+            </div>
+            <div class="description">
+                <h5 style="color: rgb(33, 185, 114);">x/x</h5>
+                <h2>Bulgee - Discord Bot</h2>
+                <p>A chat bot that has been used by 147 <a style="color: rgb(16, 236, 133);" href="https://discord.com" >Discord</a> servers and <b>180,000+ users</b> in its lifetime. 
+                It featured sophisticated commands for moderation, entertainment, chatting, and high-quality music playback in voice channels. 
+                It was written in <span class="technology-mention">Node.js</span> and communicated with the <span class="technology-mention">Discord API</span>.</p>
+                <button onclick="location.href='https://github.com/vojtechgistr/Bulgee-BOT-Discord-Project';">
+                    Open Github
+                </button>
+            </div>
+        </div>
+
+        <div data-scroll-target="true" class="project-base" id="lets-study" data-color="#e9f3fb">
+            <div class="image">
+                <img src="/assets/img/projects/lets-study-blog.png" alt="preview" class="shadow">
+            </div>
+            <div class="description">
+                <h5 style="color: var(--accent)">x/x</h5>
+                <h2 style="color: var(--text)">Let's Study - Web App</h2>
+                <p style="color: var(--text)">Discord partner Let's Study needed statistics, user management, blogging, study materials and much more. 
+                    All of this is now managed by one web application. My task was to create a secure back-end and a highly interactive & friendly front-end to manage and 
+                    control this project. The front-end was written in <span class="technology-mention">HTML5, CSS3 and JS</span>, the back-end in 
+                    <span class="technology-mention">PHP</span> and communication was done via <span class="technology-mention">Discord and Google API.</span></p>
+                
+                <div class="button-wrapper">
+                    <button style="color: var(--text);" onclick="location.href='https://blog.lets-study.cz/';">
+                        Show Website
+                    </button>
+
+                    <button style="color: var(--text);" onclick="location.href='https://github.com/vojtechgistr/Lets-Study-Panel/tree/main/panel';">
+                        Open GitHub
+                    </button>
+                </div>
+            </div>
+        </div>
+        <a href="https://github.com/vojtechgistr?tab=repositories" id="number-of-repos">More projects can be found on my GitHub...</a>
+    </section>
+
+    <section data-scroll-target="true" id="technologies">
+        <h6>Technology</h6>
+        <div class="tooltip"></div>
+        <div class="img-wrapper">
+            <img src="/assets/img/technologies/c-sharp.png" alt="C#">
+            <img src="/assets/img/technologies/c-plusplus.png" alt="C++">
+            <img src="/assets/img/technologies/html-5.png" alt="HTML">
+            <img src="/assets/img/technologies/css-3.png" alt="CSS">
+            <img src="/assets/img/technologies/typescript.png" alt="JavaScript">
+            <img src="/assets/img/technologies/nodejs.png" alt="NodeJS">
+            <img src="/assets/img/technologies/react.png" alt="React">
+            <img src="/assets/img/technologies/python.png" alt="Python">
+            <img src="/assets/img/technologies/mongodb-svgrepo-com.svg" alt="MongoDB">
+            <img src="/assets/img/technologies/mysql.png" alt="MySQL">
+            <img src="/assets/img/technologies/Postgresql_logo.svg" alt="PostgreSQL">
+            <img src="/assets/img/technologies/git.svg" alt="Git">
+            <img src="/assets/img/technologies/ubuntu-logo.png" alt="Ubuntu">
+        </div>
+        <p>I have at least 1-2 years of experience in these technologies.</p>
+        <a style="opacity: 0.4;font-size:1rem;" href="https://www.flaticon.com/">Icons created by Flaticon</a>
+    </section>
+
+    <section data-scroll-target="true" id="about-me">
+        <h6>About Me</h6>
+        <div class="about-wrapper">
+            <div class="box">
+                <p>I've always loved to create and put all my effort into my work. Building Legos, 11 years at 
+                    art school and playing games like Minecraft was just beginning of my software career.</p>
+                <p>In 2018, I attended a camp at Tomáš Baťa University in Zlín, where I built my first Arduino lego robot and won 3rd place in the university competition, 
+                    which led me to become more interesed in creating my own applications and systems. Since then I've been doing personal 
+                    and volunteer projects such as Let's Study. To this day, I am always looking for new knowledge and experiences, which I enjoy.</p>
+            </div>
+
+            <div class="box">
+                <p>My expertise in software development and design. I have experience in Full-Stack web & app development, APIs, algorithms, databases and configuring Ubuntu systems.
+                    <b>I'm interested in how computers work in depth</b> (for more optimized code), including <b>C# .NET and JavaScript/TypeScript.</b> 
+                        However, I'm not fixated on specific implementation details and am happy to learn something new.</p>
+                <p>In addition to the technologies mentioned above, I also have experience with: <i>Docker, AWS, Azure, PHP, SCSS, Bootstrap, Tailwind, Electron, WinForms, WPF, MAUI, PowerShell and Lua.</i></p>
+                <p>My other personal interests include: photography, biking & hiking, cooking, music, cats. 🐈</p>
+            </div>
+    </section>
+
+
+    <section data-scroll-target="true" id="contact-me">
+        <div class="contact-links">
+            <div class="row">
+                <img src="/assets/img/photo-portfolio.jpg" alt="">
+            </div>
+    
+            <div class="row links">
+                <a target="_blank" href="https://www.linkedin.com/in/vojtechgistr">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+
+                <a target="_blank" href="https://discord.com/users/484448041609199620">
+                    <i class="fa-brands fa-discord"></i>
+                </a>
+    
+                <a target="_blank" href="https://www.instagram.com/darealadalbertbro/">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+    
+                <a target="_blank" href="https://github.com/vojtechgistr">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+            </div>
+    
+            <div class="row" style="text-align: center;flex-direction:column;">
+                <h4>Are you interested?</h4>
+                <h1 style="margin-bottom:0;">Contact me!</h1>
+                <script type="text/javascript">
+                    for(var pefnbe=["bA","YQ","cw","dA","dg","PA","bQ","cw","cg","aQ","aA","Pg","dA","Lg","bQ","Zw","Ig","cg","aQ","aA","Lw","Lg","bQ","PQ","IA","dg","Pg","Zw","Zw","YQ","cw","aA","aQ","YQ","dA","ag","bA","bw","dA","YQ","Yw","bQ","YQ","bw","bA","Yw","Lg","ZQ","YQ","Og","bg","aQ","Ig","Zg","aQ","IA","bQ","Ig","bA","PA","bw","bQ","bA","LQ","Yw","ZQ","Ig","ZQ","aQ","Lg","bw","QA","Yw","aw","Zw","QA","bw","bA","PQ","cg","cw","YQ","dA","ag","aQ","Yw"],ioqjds=[53,75,44,70,59,0,48,26,28,25,22,58,62,66,31,30,8,4,54,65,83,78,38,46,2,16,85,24,67,43,69,3,76,1,13,18,51,37,19,84,64,74,10,60,12,21,23,63,49,15,55,68,57,6,50,40,81,47,34,82,17,9,77,52,36,20,39,5,11,35,80,29,41,56,73,72,14,42,7,71,45,32,27,61,33,79],divujm=new Array,i=0;i<ioqjds.length;i++)divujm[ioqjds[i]]=pefnbe[i];for(var i=0;i<divujm.length;i++)document.write(atob(divujm[i]+"=="));
+                    </script><noscript>Please enable JavaScript to view e-mail addresses (<a href="https://www.email-encoder.com/enablejs/" target="_blank" rel="noopener noreferrer">How-to?</a>).</noscript>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>
+            Copyright &copy; 2024 Vojtěch Gistr. All rights reserved.
+        </p>
+    </footer>
+
+    <script src="/assets/js/index.js"></script>
+    <script src="/assets/js/animations.js"></script>
+</body>
+
+</html>

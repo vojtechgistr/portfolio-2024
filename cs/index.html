@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-K092TSE7M8"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-K092TSE7M8');
+    </script>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Vojtěch Gistr - Portfolio</title>
+    <meta name="description" content="Full-stack Web & Dekstop, inteligentní systémy, software design." />
+    <meta name="author" content="Vojtěch Gistr" />
+    <meta name="copyright" content="Copyright &copy; 2024 Vojtěch Gistr. Všechna práva vyhrazena." />
+    <meta name="keywords" content="portfolio, software developer, software engineer, front-end, frontend, back-end, backend, full-stack, fullstack, intelligent systems, software architecture, software design, gistr, Vojtěch Gistr, C#, .NET, javascript, typescript, database, html, scss, css, nodejs, react, postgresql, git, ubuntu" />
+    <meta name="robots" />
+
+    <!-- LIBRARIES -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+
+    <!-- STYLES & FONTS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=JetBrains+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Major+Mono+Display&display=swap">
+    <link rel="stylesheet" href="/assets/css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- FAVICONS -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/assets/img/favicons/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/assets/img/favicons/android-chrome-512x512.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicons/favicon-16x16.png">
+    <link rel="icon" sizes="48x48" href="/assets/img/favicons/favicon.ico">
+    <link rel="manifest" href="/assets/img/favicons/site.webmanifest">
+    <meta name="msapplication-TileColor" content="#00a0df">
+    <meta name="theme-color" content="#e9f3fb">
+
+    <!-- meta tags for media -->
+    <meta property="og:title" content="Vojtěch Gistr - Portfolio">
+    <meta property="og:description" content="Full-stack Web & Dekstop, inteligentní systémy, software design.">
+    <meta property="og:image" content="/assets/img/favicons/android-chrome-192x192.png">
+    <meta property="og:url" content="https://gistr.dev/cs/">
+    <meta property="og:site_name" content="gistr.dev">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="cs_CZ">
+</head>
+
+<body>
+    <nav data-scroll-target="true" id="home">
+        <div class="nav-title">
+            <div class="author">
+                <h3 class="name">Vojtěch Gistr</h3>
+                <p class="title">Software Engineer & University Student</p>
+            </div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home" class="active">Domů</a></li>
+            <li><a href="#projects">Projekty</a></li>
+            <li><a href="#about-me">O mně</a></li>
+            <li><a href="#contact-me">Kontakt</a></li>
+            <li>
+                <a href="/en/" style="margin-left:1rem;display: flex;align-items:center;justify-content:center;gap:0.5rem;">
+                    <img style="width: 1.6rem;" src="/assets/img/czech-republic.png" alt="CS">
+                    <i class="fa-solid fa-repeat"></i>
+                </a>
+            </li>
+        </ul>
+        <div class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+    
+
+    <header>
+        <div class="row">
+
+            <div class="column heading-text">
+                <h4>Od inspirace k realizaci:</h4>
+                <h1>Full-stack Web & Dekstop, inteligentní systémy, software design.</h1>
+                <p>Jsem tvořivý, rychle se adaptuji a vážím si motivovaných lidí. Rád řeším problémy, cením si zpětné vazby a MILUJU učení. Neustále rozvýjím své znalosti v praxi a aktivně je aplikuji.</p>
+
+                <div class="button-wrapper">
+                    <button class="btn-primary" onclick="location.href='#contact-me'">Kontaktuj mě</button>
+                    <button class="btn-secondary" onclick="location.href='#projects'">Projekty</button>
+                </div>
+            </div>
+
+            <div class="column heading-logo">
+                <img src="/assets/img/logo.svg" alt="">
+                <div class="overlay"></div>
+            </div>
+        </div>
+    </header>
+    
+    <section id="projects">
+
+        <div data-scroll-target="true" class="project-base" id="face-recognition" data-color="#f1f1e6">
+            <div class="image">
+                <img src="/assets/img/projects/face-recognition-preview.jpeg" alt="preview" class="shadow">
+            </div>
+            <div class="description">
+                <h5 style="color: var(--accent)">x/x</h5>
+                <h2 style="color: var(--text)">Face Recognition System<span class="latest">LATEST</span></h2>
+                <p style="color: var(--text)"><b>Real-time</b> rozpoznávání identity člověka pomocí obličeje s přesností až <b>~99.36%</b>, včetně 3D analýzy, 
+                    adaptace obličeje a několika fázové verifikace. Rychlost dosahuje v průměru <b>~19.3 ms</b> při 10,000 obličejích v databázi <span class="technology-mention">PostgreSQL</span>. 
+                    Do systému je integrována kamera <span class="technology-mention">Intel Realsense D435</span>. Je napsán v <span class="technology-mention">C# .NET 8</span> a byl vyvinut pro partnera firmy SPC Solutions s.r.o.</p>
+                <button style="color: var(--text)" onclick="location.href='http://www.spc.cz';">
+                    Stránka firmy
+                </button>
+            </div>
+        </div>
+
+        <div data-scroll-target="true" class="project-base" id="microleaf-lyghts" data-color="#00081a">
+            <div class="image">
+                <video width="320" height="240" controls class="shadow">
+                    <source src="/assets/documents/microleaf-lyghts-preview.mp4" type="video/mp4">
+                    Tvůj prohlížeč nepodporuje video tag.
+                </video>
+            </div>
+            <div class="description">
+                <h5 style="color: #761bdd;">x/x</h5>
+                <h2>Microleaf Lyghts</h2>
+                <p>Adaptace Nanoleaf® - Modulární LED světla, jež lze ovládat pomocí mobilní cross-platform aplikace napsané v <span class="technology-mention">React Native</span>.
+                    Při tomto projektu jsem se naučil pracovat s elektronikou, synchronizací a komunikací mezi specifickymi zařízeními. Přijímač je napsán v <span class="technology-mention">C++</span>.</p>
+                <button onclick="location.href='/assets/documents/microleaf-lyghts-study.pdf'">
+                    Zobrazit Studii
+                </button>
+            </div>
+        </div>
+
+        <div data-scroll-target="true" class="project-base" id="battleship-minigame" data-color="#182848">
+
+            <div class="bubble bubble--1"></div>
+            <div class="bubble bubble--2"></div>
+            <div class="bubble bubble--3"></div>
+            <div class="bubble bubble--4"></div>
+            <div class="bubble bubble--5"></div>
+            <div class="bubble bubble--6"></div>
+            <div class="bubble bubble--7"></div>
+            <div class="bubble bubble--8"></div>
+            <div class="bubble bubble--9"></div>
+            <div class="bubble bubble--10"></div>
+            <div class="bubble bubble--11"></div>
+            <div class="bubble bubble--12"></div>
+
+            <div class="image">
+                <img src="/assets/img/projects/battleship-preview.png" alt="preview" class="shadow">
+            </div>
+            <div class="description">
+                <h5 style="color: rgb(0, 163, 163);">x/x</h5>
+                <h2>Minihra Battleships</h2>
+                <p>Battleships (nebo také "Lodě") je strategická hra
+                    pro 2 hráče, v níž hrajete proti <span class="technology-mention">AI</span>. Každý hráč má na svém
+                    poli umístěné různé typy lodí, které protivník nevidí. Cílem je všechny lodě sestřelit. Tvorba této hry
+                    byla dobrá cesta se naučit tvorbu složitějších algoritmů a vysoce interaktivního UI. Konzolová aplikace byla napsána v jazyce <span class="technology-mention">C++</span>.</p>
+                <div class="button-wrapper">
+                    <button onclick="location.href='/assets/documents/battleships-minigame-study.pdf'">
+                        Zobrazit Studii
+                    </button>
+
+                    <button onclick="location.href='https://github.com/vojtechgistr/BattleShip-minigame';">
+                        Otevřít GitHub
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div data-scroll-target="true" class="project-base" id="bulgee-discord-bot" data-color="#264a45">
+            <div class="image">
+                <img src="/assets/img/projects/bulgee-preview.png" alt="preview" class="shadow">
+            </div>
+            <div class="description">
+                <h5 style="color: rgb(33, 185, 114);">x/x</h5>
+                <h2>Bulgee - Discord Bot</h2>
+                <p>Chat bot, jenž byl za svůj život používán 147 <a style="color: rgb(16, 236, 133);" href="https://discord.com" >Discord</a> servery a <b>180,000+ uživateli</b>. 
+                    Přinášel propracováné přikazy pro moderaci, zábavu, chatování a vysoce kvalitní přehrávání hudby v hlasových kanálech. 
+                    Napsán byl v <span class="technology-mention">Node.js</span> a komunikoval s <span class="technology-mention">Discord API</span>.</p>
+                <button onclick="location.href='https://github.com/vojtechgistr/Bulgee-BOT-Discord-Project';">
+                    Otevřít GitHub
+                </button>
+            </div>
+        </div>
+
+        <div data-scroll-target="true" class="project-base" id="lets-study" data-color="#e9f3fb">
+            <div class="image">
+                <img src="/assets/img/projects/lets-study-blog.png" alt="preview" class="shadow">
+            </div>
+            <div class="description">
+                <h5 style="color: var(--accent)">x/x</h5>
+                <h2 style="color: var(--text)">Let's Study - Web App</h2>
+                <p style="color: var(--text)">Discord partner Let's Study potřeboval statistiky, správu uživatelů,
+                    tvorbu blogu, studijních materiálů, a mnoho víc. To vše je nyní spravováno jednou
+                    webovou aplikací. Můj úkol byl vytvořit bezpečný Back-end a vysoce interaktivní &
+                    přívětivý front-end pro administrátory a manažery tohoto projektu. 
+                    Front-end byl napsán v <span class="technology-mention">HTML5, CSS3 a JS</span>, Back-end v <span class="technology-mention">PHP</span> a komunikace probíhala přes <span class="technology-mention">Discord a Google API</span>.</p>
+                
+                <div class="button-wrapper">
+                    <button style="color: var(--text);" onclick="location.href='https://blog.lets-study.cz/';">
+                        Zobrazit Stránku
+                    </button>
+
+                    <button style="color: var(--text);" onclick="location.href='https://github.com/vojtechgistr/Lets-Study-Panel/tree/main/panel';">
+                        Otevřít Github
+                    </button>
+            </div>
+            </div>
+        </div>
+        <a href="https://github.com/vojtechgistr?tab=repositories"id="number-of-repos">Další projekty jsou k nalezení na GitHubu...</a>
+    </section>
+
+    <section data-scroll-target="true" id="technologies">
+        <h6>Technologie</h6>
+        <div class="tooltip"></div>
+        <div class="img-wrapper">
+            <img src="/assets/img/technologies/c-sharp.png" alt="C#">
+            <img src="/assets/img/technologies/c-plusplus.png" alt="C++">
+            <img src="/assets/img/technologies/html-5.png" alt="HTML">
+            <img src="/assets/img/technologies/css-3.png" alt="CSS">
+            <img src="/assets/img/technologies/typescript.png" alt="JavaScript">
+            <img src="/assets/img/technologies/nodejs.png" alt="NodeJS">
+            <img src="/assets/img/technologies/react.png" alt="React">
+            <img src="/assets/img/technologies/python.png" alt="Python">
+            <img src="/assets/img/technologies/mongodb-svgrepo-com.svg" alt="MongoDB">
+            <img src="/assets/img/technologies/mysql.png" alt="MySQL">
+            <img src="/assets/img/technologies/Postgresql_logo.svg" alt="PostgreSQL">
+            <img src="/assets/img/technologies/git.svg" alt="Git">
+            <img src="/assets/img/technologies/ubuntu-logo.png" alt="Ubuntu">
+        </div>
+        <p>V těchto technologiích mám alespoň 1-2 roky zkušeností.</p>
+        <a style="opacity: 0.4;font-size:1rem;" href="https://www.flaticon.com/">Ikony vytvořeny stránkou Flaticon</a>
+    </section>
+
+    <section data-scroll-target="true" id="about-me">
+        <h6>O mně</h6>
+        <div class="about-wrapper">
+            <div class="box">
+                <p>Vždy jsem by tvořivým člověkem a dával si záležet na svých výtvorech. Stavění lega, 11 let v umělecké škole a hraní her jako Minecraft byl pouze začátek v mé kariéře v softwaru. 
+                    Od konfigurace, vytváření komplexních MC serverů, až po programování.
+                </p>
+                <p>V roce 2018 jsem se zúčastnil tábora na Univerzitě Tomáše Bati ve Zlíně, kde jsem sestavil svého prvního Arduino lego robota a vyhrál 
+                    3. místo v univerzitní soutěži, díky čemuž jsem se začal více zajímat o vytváření vlastních aplikací a systémů. Od té doby jsem strávil svůj čas na osobních i dobrovolných projektech, jako je třeba <a href="#Lets-study">Let's Study</a>. Do teď neustále vyhledávám nové znalosti a zkušenosti, což mě baví.</p>
+            </div>
+
+            <div class="box">
+                <p>Mám dlouhodobé zkušenosti s vývojem Full-Stack webových či desktopových aplikací, API, algoritmů, databází a konfigurací serverů Ubuntu. 
+                    <b>Do hloubky se zajímám se o fungování počítačů</b> (pro více optimalizovaný kód), <b>C# .NET a JavaScript/TypeScript</b>, avšak nejsem fixován na specifické implementační detaily a rád se přiučím něčemu novému.</p>
+                <p>Kromě výše zmíněných technologíí mám také zkušenosti s: <i>Docker, AWS, Azure, PHP, SCSS, Bootstrap, Tailwind, Electron, Winforms, WPF, MAUI, PowerShell a Lua.</i></p>
+                <p>Mezi me koníčky patří: fotografování, cyklistika, horská turistika, vaření a kočky. 🐈</p>
+            </div>
+    </section>
+
+
+    <section data-scroll-target="true" id="contact-me">
+        <div class="contact-links">
+            <div class="row">
+                <img src="/assets/img/photo-portfolio.jpg" alt="">
+            </div>
+    
+            <div class="row links">
+                <a target="_blank" href="https://www.linkedin.com/in/vojtechgistr">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+
+                <a target="_blank" href="https://discord.com/users/484448041609199620">
+                    <i class="fa-brands fa-discord"></i>
+                </a>
+    
+                <a target="_blank" href="https://www.instagram.com/darealadalbertbro/">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+    
+                <a target="_blank" href="https://github.com/vojtechgistr">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+            </div>
+    
+            <div class="row" style="text-align: center;flex-direction:column;">
+                <h4>Zaujal jsem vás?</h4>
+                <h1 style="margin-bottom:0;">Napište mi!</h1>
+                <script type="text/javascript">
+                    for(var pefnbe=["bA","YQ","cw","dA","dg","PA","bQ","cw","cg","aQ","aA","Pg","dA","Lg","bQ","Zw","Ig","cg","aQ","aA","Lw","Lg","bQ","PQ","IA","dg","Pg","Zw","Zw","YQ","cw","aA","aQ","YQ","dA","ag","bA","bw","dA","YQ","Yw","bQ","YQ","bw","bA","Yw","Lg","ZQ","YQ","Og","bg","aQ","Ig","Zg","aQ","IA","bQ","Ig","bA","PA","bw","bQ","bA","LQ","Yw","ZQ","Ig","ZQ","aQ","Lg","bw","QA","Yw","aw","Zw","QA","bw","bA","PQ","cg","cw","YQ","dA","ag","aQ","Yw"],ioqjds=[53,75,44,70,59,0,48,26,28,25,22,58,62,66,31,30,8,4,54,65,83,78,38,46,2,16,85,24,67,43,69,3,76,1,13,18,51,37,19,84,64,74,10,60,12,21,23,63,49,15,55,68,57,6,50,40,81,47,34,82,17,9,77,52,36,20,39,5,11,35,80,29,41,56,73,72,14,42,7,71,45,32,27,61,33,79],divujm=new Array,i=0;i<ioqjds.length;i++)divujm[ioqjds[i]]=pefnbe[i];for(var i=0;i<divujm.length;i++)document.write(atob(divujm[i]+"=="));
+                    </script><noscript>Prosím zapněte si JavaScript pro zobrazení e-mail adresy (<a href="https://www.email-encoder.com/enablejs/" target="_blank" rel="noopener noreferrer">Jak na to?</a>).</noscript>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>
+            Copyright &copy; 2024 Vojtěch Gistr. Všechna práva vyhrazena.
+        </p>
+    </footer>
+
+    <script src="/assets/js/index.js"></script>
+    <script src="/assets/js/animations.js"></script>
+    <!-- <script src="../assets/js/business-card.js"></script> -->
+</body>
+
+</html>
