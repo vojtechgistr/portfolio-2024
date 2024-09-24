@@ -283,21 +283,6 @@ nav li a.active {
     pointer-events: none;
 }
 
-nav .toggle-button {
-    cursor: pointer;
-    display: none;
-}
-
-nav .toggle-button .bar {
-    display: block;
-    width: 2rem;
-    height: 0.25rem;
-    margin: 0.5rem auto;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-    background-color: var(--text);
-}
-
 section#technologies {
     display: flex;
     width: 100%;
@@ -725,30 +710,6 @@ span.technology-mention {
     color: var(--text)
 }
 
-@keyframes stroke {
-    100% {
-        stroke-dashoffset: 0;
-    }
-}
-
-@keyframes scale {
-
-    0%,
-    100% {
-        transform: none;
-    }
-
-    50% {
-        transform: scale3d(1.1, 1.1, 1);
-    }
-}
-
-@keyframes fill {
-    100% {
-        box-shadow: inset 0px 0px 0px 6rem var(--primary-button);
-    }
-}
-
 @media(max-width: 1180px) {
     section#about-me img {
         width: 100%;
@@ -759,57 +720,14 @@ span.technology-mention {
     section#about-me .about-wrapper {
         width: 100%;
     }
-
 }
 
 @media(max-width: 992px) {
-    nav .toggle-button {
-        display: block;
-        margin: auto 0;
-    }
-
-    nav .toggle-button.active .bar:nth-child(1) {
-        transform: translateY(8px) rotate(45deg);
-    }
-
-    nav .toggle-button.active .bar:nth-child(2) {
-        opacity: 0;
-    }
-
-    nav .toggle-button.active .bar:nth-child(3) {
-        transform: translateY(-8px) rotate(-45deg);
-    }
-
-    nav ul {
-        position: fixed;
-        left: -100%;
-        top: 8rem;
-        gap: 0;
+    .row {
         flex-direction: column;
-        background-color: var(--text);
-        width: 100%;
-        height: 100vh;
-        text-align: center;
-        transition: 0.3s;
-        z-index: 999999;
     }
-
-    nav ul.active {
-        left: 0;
-        padding-top: 2rem;
-    }
-
-    nav li {
-        width: 100%;
-        padding: 1rem 0;
-    }
-
-    nav ul li a {
-        font-size: 1.5rem;
-    }
-
-    nav ul li a:hover {
-        color: var(--accent);
+    nav ul {
+        display: none;
     }
 
     h6 {
@@ -1156,13 +1074,4 @@ section#projects .project-base#Battleship-minigame {
     animation-delay: -10.5s;
     animation-duration: 19s;
     opacity: 0.3;
-}
-
-@keyframes FadeSlideIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
 }
