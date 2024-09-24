@@ -265,7 +265,6 @@ nav a {
 
 nav ul.active a {
     color: var(--background);
-    z-index: 999999;
 }
 
 nav a:hover {
@@ -608,8 +607,11 @@ section#about-me .about-wrapper {
 
 section#about-me .about-wrapper .box {
     padding: 1.8rem;
-    background-color: white;
+    background-color: var(--background-overlay);
     border-radius: 18px;
+}
+section#about-me h6 {
+    color: var(--accent);
 }
 
 section#about-me .about-wrapper .box p:last-child {
@@ -717,12 +719,31 @@ span.technology-mention {
         margin-bottom: 4rem;
     }
 
+    section#projects .project-base {
+        flex-direction: column;
+        margin-bottom: 3rem;
+        margin-bottom: 3rem;
+    }
+
+    
+    section#projects .project-base .image img,
+    section#projects .project-base .image video {
+        width: 70%;
+        min-width: 70%;
+        height: auto;
+    }
+
     section#about-me .about-wrapper {
         width: 100%;
     }
 }
 
 @media(max-width: 992px) {
+    
+    header .heading-text {
+        padding: 0 2rem;
+    }
+    
     .row {
         flex-direction: column;
     }
@@ -733,25 +754,26 @@ span.technology-mention {
     h6 {
         font-size: 6rem;
     }
+    
 
     section#projects .project-base {
-        padding-bottom: 4rem;
-        padding-top: 4rem;
         flex-direction: column;
+        margin-bottom: 3rem;
+        margin-bottom: 3rem;
     }
+
+    section#projects .project-base .image {
+        min-height: 300px;
+    }
+
+    section#projects .project-base .image img,
+    section#projects .project-base .image video {
+        margin: 0rem;
+    }
+
 
     section#projects .project-base:nth-child(even) {
         flex-direction: column-reverse;
-        padding-bottom: 4rem;
-        padding-top: 4rem;
-    }
-
-    section#projects .project-base:nth-child(odd) .image {
-        margin-bottom: 24px;
-    }
-
-    section#projects .project-base:nth-child(even) .image {
-        margin-top: 24px;
     }
 
     section#projects #microleaf-lyghts::before {
@@ -760,22 +782,6 @@ span.technology-mention {
     
     section#projects #bulgee-discord-bot::before{
         background-position: center bottom;
-    }
-
-    section#projects .project-base .image img {
-        width: 100%;
-        min-width: 100%;
-        height: auto;
-        padding: 1rem;
-    }
-
-    section#projects .project-base .image video {
-        width: 100%;
-        height: auto;
-    }
-
-    section #contact-form {
-        width: 100%;
     }
 }
 
@@ -799,7 +805,14 @@ span.technology-mention {
     h6 {
         font-size: 3rem;
     }
-
+    
+    section#projects .project-base .image img,
+    section#projects .project-base .image video {
+        width: 100%;
+        min-width: 100%;
+        height: auto;
+    }
+    
     section#technologies .img-wrapper {
         width: 100%;
         gap: 2rem;

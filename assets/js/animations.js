@@ -1,19 +1,27 @@
 
-window.onload = () => {
-	const headerTexts = document.querySelectorAll("header h1, header h2, header ");
+let isWindowSmall = false;
+window.addEventListener("resize", () => {
+	isWindowSmall = window.screen.width < 1180;
+});
 
-	headerTexts.forEach((element, index) => {
-		gsap.from(element, {
-			scrollTrigger: {
-				trigger: element,
-				start: "top 80%",
-			},
-			y: 50,
-			opacity: 0,
-			duration: 1,
-			stagger: 1,
+window.onload = () => {
+	isWindowSmall = window.screen.width < 1180;
+	
+	if (window.screen.width > 1180) {
+		const headerTexts = document.querySelectorAll("header h1, header h2, header ");
+		headerTexts.forEach((element, index) => {
+			gsap.from(element, {
+				scrollTrigger: {
+					trigger: element,
+					start: "top 80%",
+				},
+				y: 50,
+				opacity: 0,
+				duration: 1,
+				stagger: 1,
+			});
 		});
-	});
+	}
 
 	// animate all below hash
 	const otherTexts = document.querySelectorAll('.project-base h2, .project-base h5, .project-base p, .project-base .image, section#about-me .about-wrapper, section#about-me h6, section#technologies h6, section#technologies .img-wrapper');
@@ -72,9 +80,10 @@ window.onload = () => {
 	coloredSections.forEach((section, i) => {
 		// grab the colors from the attribute
 		let [bgColor, color] = section.getAttribute("data-color").split(" ");
+		const start = isWindowSmall ? "400 bottom" : "550 bottom";
 		ScrollTrigger.create({
 			trigger: section,
-			start: "550 bottom",
+			start: start,
 			end: "+=100%",
 			onToggle: (self) => {
 				// whenever we enter a section from either direction (scrolling up or down), animate to its color
