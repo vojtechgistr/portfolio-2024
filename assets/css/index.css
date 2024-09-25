@@ -747,6 +747,13 @@ span.technology-mention {
     .row {
         flex-direction: column;
     }
+
+    nav {
+        justify-content: center;
+        padding: 2rem;
+        margin-bottom: 2rem;
+    }
+
     nav ul {
         display: none;
     }
